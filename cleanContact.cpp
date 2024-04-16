@@ -10,6 +10,6 @@ void cleanContact(struct contactBook *p ){
         cout<<"the contacts have been cleaned !"<<endl;
     }
    
-    system("pause");
-    system("clear");
+   // system("pause");
+   // system("clear");
 }

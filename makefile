@@ -1,6 +1,6 @@
 objects = main.o addContact.o cleanContact.o deleteContact.o showMenu.o \
-          isExist.o keyInput.o modifyContact.o reshowMenu.o searchContact.o \
-		  selectMenu.o showContact.o
+          isExist.o keyInput.o modifyContact.o searchContact.o \
+		  showContact.o
 
 main : $(objects)
 	g++ $(objects) -o main

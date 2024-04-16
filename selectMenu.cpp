@@ -10,7 +10,8 @@
 #include"modifyContact.h"
 #include"cleanContact.h"
 using namespace std;
-   
+  // this must be in main() with instance
+  // it does not work in seperate file 
 void selectMenu(int key, struct contactBook *books){
      //struct contactBook books;
             switch (key)

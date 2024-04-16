@@ -8,12 +8,8 @@ void addContact(struct contactBook *p){
         cout<<"no space for new contacts!"<<endl;
     }else{
         cout<<"name: ";
-       // cin >> ((*p).person[p->size].name); THIS WAY IS WRONG
-       string na;
-       cin >> na;
-       //(*p).person[(*p).size].name = name;
-       p->person[p->size].name = na;
-
+        cin >> (*p).person[p->size].name; 
+      
         cout<<"gender(male: 1, female: 2): ";
         while(true){
             int sex ;
@@ -27,15 +23,12 @@ void addContact(struct contactBook *p){
         }
        
         cout<<"phone#: ";
-        string phone;
-        cin >>  phone;
-        p->person[p->size].phoneNum = phone;
-
+        cin>> p->person[p->size].phoneNum;
         cout<<"new contact has been added!\n";
          // p++; 
          p->size++;
-         system("pause");// please press any key to continue
-         system("clear");//clear the screen, windows: system("cls")
+        // system("pause");// please press any key to continue
+        // system("clear");//clear the screen, windows: system("cls")
     }
    
 }

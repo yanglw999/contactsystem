@@ -7,13 +7,13 @@ void searchContact(struct contactBook * p){
     if(v != -1){
         cout<<"contact you searched is as below:"<<endl;
         cout<<"name:\t"<<p->person[v].name;
-        cout<<"gender:\t"<<p->person[v].gender;
-        cout<<"phone#:\t"<<p->person[v].phoneNum;
+        cout<<"\tgender:\t"<<(p->person[v].gender == 1? "male" : "female"); // () is required
+        cout<<"\tphone#:\t"<<p->person[v].phoneNum<<endl;
 
     }else{
         cout<<"the contact searched is not existing !\n";
     }
-    system("pause");
-    system("clear");//system("cls");
+    //system("pause");
+   // system("clear");//system("cls");
 
 }
